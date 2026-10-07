@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://juan17la.github.io/Udeos_Launcher/sitemap.xml
