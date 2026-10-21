@@ -8,7 +8,7 @@
 <meta name="keywords" content="Udeos Launcher, Minecraft launcher, free Minecraft launcher, offline Minecraft launcher, Forge, NeoForge, Fabric, Quilt, Modrinth, modpacks, Minecraft server">
 <meta name="author" content="Juan17la">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#2563EB">
+<meta name="theme-color" content="#0E1423">
 <!-- SITE_URL: change these four if the page moves to another domain (also robots.txt + sitemap.xml) -->
 <link rel="canonical" href="https://juan17la.github.io/Udeos_Launcher/">
 <meta property="og:url" content="https://juan17la.github.io/Udeos_Launcher/">
@@ -25,7 +25,8 @@
 <meta name="twitter:description" content="Play Minecraft on Windows, macOS and Linux. No Microsoft account. Pick a name, pick a version, press Play.">
 <link rel="icon" href="assets/icon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
-<link rel="preload" href="assets/pt-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/pixelify-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css">
 <!-- softwareVersion and downloadUrl are refreshed from the latest GitHub release by js/download.js -->
 <script type="application/ld+json" id="ld">
@@ -76,9 +77,9 @@
     <div class="tags"><span class="tag v" data-version>latest</span><span class="tag">Windows</span><span class="tag">macOS</span><span class="tag">Linux</span><span class="tag l">No Java needed</span></div>
   </div>
   <div class="shots" aria-label="Launcher screenshots">
-    <img class="back1" data-shot="addons" width="2540" height="1766" alt="Addons page">
-    <img class="back2" data-shot="skins" width="2540" height="1766" alt="Skins page">
-    <img class="front" data-shot="instances" width="2540" height="1766" alt="Instances page of Udeos Launcher">
+    <img class="back1" data-shot="addons" width="1920" height="1334" alt="Addons page">
+    <img class="back2" data-shot="skins" width="1920" height="1334" alt="Skins page">
+    <img class="front" data-shot="instances" width="1920" height="1334" alt="Instances page of Udeos Launcher">
   </div>
   <a class="scroll-hint" href="#gallery">↓ see what's inside</a>
 </section>
@@ -93,10 +94,10 @@
   <!-- Add photos here: one <figure class="panel"> per picture. data-shot swaps light/dark launcher screenshots;
        for any other picture use a plain src instead. -->
   <div class="track" id="track">
-    <figure class="panel"><img data-shot="instances" width="2540" height="1766" loading="lazy" alt="Instances page"><figcaption><b>Instances</b><span class="muted">Every version and modpack in its own space.</span></figcaption></figure>
-    <figure class="panel"><img data-shot="addons" width="2540" height="1766" loading="lazy" alt="Addons page"><figcaption><b>Addons</b><span class="muted">Mods, resource packs, shaders and modpacks from Modrinth.</span></figcaption></figure>
-    <figure class="panel"><img data-shot="skins" width="2540" height="1766" loading="lazy" alt="Skins page"><figcaption><b>Skins</b><span class="muted">Your library, a 3D preview and an editor.</span></figcaption></figure>
-    <figure class="panel"><img data-shot="servers" width="2540" height="1766" loading="lazy" alt="Servers page"><figcaption><b>Servers</b><span class="muted">Host a world and let your friends in.</span></figcaption></figure>
+    <figure class="panel"><img data-shot="instances" width="1920" height="1334" loading="lazy" alt="Instances page"><figcaption><b>Instances</b><span class="muted">Every version and modpack in its own space.</span></figcaption></figure>
+    <figure class="panel"><img data-shot="addons" width="1920" height="1334" loading="lazy" alt="Addons page"><figcaption><b>Addons</b><span class="muted">Mods, resource packs, shaders and modpacks from Modrinth.</span></figcaption></figure>
+    <figure class="panel"><img data-shot="skins" width="1920" height="1334" loading="lazy" alt="Skins page"><figcaption><b>Skins</b><span class="muted">Your library, a 3D preview and an editor.</span></figcaption></figure>
+    <figure class="panel"><img data-shot="servers" width="1920" height="1334" loading="lazy" alt="Servers page"><figcaption><b>Servers</b><span class="muted">Host a world and let your friends in.</span></figcaption></figure>
   </div>
   <div class="ctrl">
     <button class="btn idle square" data-slide="-1" aria-label="Previous picture">←</button>
@@ -255,6 +256,7 @@
   </div>
   <p class="legal">© <span id="year">2026</span> Udeos Launcher. NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</p>
 </footer>
+<div class="grass" aria-hidden="true"></div>
 
 <script src="js/download.js"></script>
 <script src="js/main.js"></script>

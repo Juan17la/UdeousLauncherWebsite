@@ -20,7 +20,7 @@ const SLOTS = [[4,2,80,-14],[28,52,64,12],[62,6,96,8],[12,33,56,-8],[78,44,72,-2
 const decor = document.getElementById('decor');
 const paint = () => { decor.innerHTML = SLOTS.map(([t,l,s,r],i) => {
   const items = ITEMS[root.dataset.theme];
-  return `<img src="assets/items/${items[i % items.length]}.png" alt="" style="top:${t}%;left:${l}%;width:${s}px;--r:${r}deg;--d:${-i*.7}s">`; }).join(''); };
+  return `<img src="assets/items/${items[i % items.length]}.png" alt="" style="top:${t}%;left:${l}%;width:${s}px;--r:${r}deg;">`; }).join(''); };
 paint(); new MutationObserver(paint).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
 
 // gallery arrows: one picture per click, wraps around at the ends
