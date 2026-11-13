@@ -7,27 +7,46 @@
 <meta name="description" content="A free Minecraft launcher for Windows, macOS and Linux that needs no Microsoft account. Instances, mod loaders, Modrinth, skins and servers in one place.">
 <meta name="keywords" content="Udeos Launcher, Minecraft launcher, free Minecraft launcher, offline Minecraft launcher, Forge, NeoForge, Fabric, Quilt, Modrinth, modpacks, Minecraft server">
 <meta name="author" content="Juan17la">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#0E1423">
-<!-- SITE_URL: change these four if the page moves to another domain (also robots.txt + sitemap.xml) -->
+<meta name="application-name" content="Udeos Launcher">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow">
+<meta name="format-detection" content="telephone=no">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#EEF3FC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1423" media="(prefers-color-scheme: dark)">
+<!-- SITE_URL: change these if the page moves to another domain (canonical, hreflang, og:url, og:image, twitter:image, JSON-LD, robots.txt, sitemap.xml) -->
 <link rel="canonical" href="https://juan17la.github.io/Udeos_Launcher/">
-<meta property="og:url" content="https://juan17la.github.io/Udeos_Launcher/">
-<meta property="og:image" content="https://juan17la.github.io/Udeos_Launcher/assets/light_instances.png">
-<meta name="twitter:image" content="https://juan17la.github.io/Udeos_Launcher/assets/light_instances.png">
+<link rel="alternate" hreflang="en" href="https://juan17la.github.io/Udeos_Launcher/">
+<link rel="alternate" hreflang="x-default" href="https://juan17la.github.io/Udeos_Launcher/">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://juan17la.github.io/Udeos_Launcher/">
 <meta property="og:site_name" content="Udeos Launcher">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="Udeos Launcher: Free Minecraft Launcher">
 <meta property="og:description" content="Play Minecraft on Windows, macOS and Linux. No Microsoft account. Instances, mod loaders, Modrinth, skins and servers in one place.">
+<meta property="og:image" content="https://juan17la.github.io/Udeos_Launcher/assets/light_instances.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1335">
 <meta property="og:image:alt" content="Instances page of Udeos Launcher">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@1714jud">
 <meta name="twitter:title" content="Udeos Launcher: Free Minecraft Launcher">
 <meta name="twitter:description" content="Play Minecraft on Windows, macOS and Linux. No Microsoft account. Pick a name, pick a version, press Play.">
-<link rel="icon" href="assets/icon.png">
+<meta name="twitter:image" content="https://juan17la.github.io/Udeos_Launcher/assets/light_instances.png">
+<meta name="twitter:image:alt" content="Instances page of Udeos Launcher">
+<link rel="icon" type="image/png" sizes="256x256" href="assets/icon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
+<link rel="preconnect" href="https://api.github.com" crossorigin>
 <link rel="preload" href="assets/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/pixelify-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&display=swap">
 <link rel="stylesheet" href="css/style.css">
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 <!-- softwareVersion and downloadUrl are refreshed from the latest GitHub release by js/download.js -->
 <script type="application/ld+json" id="ld">
 {
@@ -42,6 +61,7 @@
   "operatingSystem": "Windows 10, Windows 11, macOS, Linux",
   "downloadUrl": "https://github.com/Juan17la/Udeos_Launcher/releases/latest",
   "softwareVersion": "latest",
+  "inLanguage": ["en", "es"],
   "license": "https://github.com/Juan17la/Udeos_Launcher/blob/main/LICENSE",
   "isAccessibleForFree": true,
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -49,214 +69,192 @@
   "sameAs": ["https://github.com/Juan17la/Udeos_Launcher"]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "WebSite", "@id": "https://juan17la.github.io/Udeos_Launcher/#website", "url": "https://juan17la.github.io/Udeos_Launcher/", "name": "Udeos Launcher", "inLanguage": "en" },
+    { "@type": "WebPage", "@id": "https://juan17la.github.io/Udeos_Launcher/#webpage", "url": "https://juan17la.github.io/Udeos_Launcher/", "name": "Udeos Launcher: Free Minecraft Launcher for Windows, macOS and Linux", "isPartOf": { "@id": "https://juan17la.github.io/Udeos_Launcher/#website" }, "primaryImageOfPage": "https://juan17la.github.io/Udeos_Launcher/assets/light_instances.png" },
+    { "@type": "FAQPage", "mainEntity": [
+      { "@type": "Question", "name": "What's an instance?", "acceptedAnswer": { "@type": "Answer", "text": "An instance is a separate copy of the game: one Minecraft version, one loader (or Vanilla) and its own folder with worlds, mods, resource packs, shaders, screenshots and settings. Game files like libraries, assets and Java are shared, so a second instance of the same version downloads almost nothing." } },
+      { "@type": "Question", "name": "How do addons work?", "acceptedAnswer": { "@type": "Answer", "text": "The Addons page searches Modrinth for mods, resource packs, shaders, data packs and modpacks. Add shows only the instances the addon fits (right version and loader) and installs required dependencies. A modpack can become a brand new instance in one click." } },
+      { "@type": "Question", "name": "How do I run a Minecraft server, and what are the options?", "acceptedAnswer": { "@type": "Answer", "text": "Go to Servers and create one: Vanilla, With mods (Fabric, Forge or NeoForge) or From a modpack. Press Start and the launcher downloads and sets up everything. Relay mode works without touching your router; Router mode opens the port with UPnP." } },
+      { "@type": "Question", "name": "How do skins work?", "acceptedAnswer": { "@type": "Answer", "text": "On the Skins page, drop a .png or click New skin to paint one on a 3D model. Pick Classic (Steve) or Slim (Alex). Click a skin in your library to wear it; it is used by every instance from the next Play." } },
+      { "@type": "Question", "name": "Can I personalize the launcher?", "acceptedAnswer": { "@type": "Answer", "text": "Yes: light or dark theme, English or Spanish, several nicknames that each remember their own theme, language and skins, and per-instance name, icon, memory, Java path and JVM arguments." } },
+      { "@type": "Question", "name": "Where are my instance folders?", "acceptedAnswer": { "@type": "Answer", "text": "Everything lives in one folder: %AppData%\\UdeosLauncher\\instances on Windows, ~/Library/Application Support/UdeosLauncher/instances on macOS and ~/.config/UdeosLauncher/instances on Linux. Set the UDEOS_HOME environment variable to keep everything somewhere else." } }
+    ] }
+  ]
+}
+</script>
 </head>
 <body>
-<div class="decor" id="decor"></div>
-
-<nav>
-  <a class="brand" href="#top"><img src="assets/icon.png" alt="">Udeos Launcher</a>
-  <div class="links"><a href="#gallery">Gallery</a><a href="#features">Features</a><a href="#download">Install</a><a href="#faq">FAQ</a></div>
-  <button class="btn idle square" id="theme" aria-label="Toggle theme"></button>
-  <a class="btn primary sm" data-primary><span data-primary-label>Download</span></a>
+<header class="sticky top-0 z-5 border-b border-line bg-glass backdrop-blur-lg">
+<nav aria-label="Main" class="mx-auto w-full max-w-[1240px] px-5 flex items-center gap-3 py-2.5">
+  <a class="mr-auto flex items-center gap-3 font-display text-xl whitespace-nowrap no-underline" href="#top"><img class="w-8" src="assets/icon.png" width="32" height="32" alt=""><span class="max-[479px]:sr-only">Udeos Launcher</span></a>
+  <div class="mr-3 hidden gap-7 min-[960px]:flex"><a class="font-medium text-muted no-underline transition-colors duration-150 hover:text-fg" href="#gallery">Screens</a><a class="font-medium text-muted no-underline transition-colors duration-150 hover:text-fg" href="#features">Features</a><a class="font-medium text-muted no-underline transition-colors duration-150 hover:text-fg" href="#open-source">Open source</a><a class="font-medium text-muted no-underline transition-colors duration-150 hover:text-fg" href="#download">Install</a><a class="font-medium text-muted no-underline transition-colors duration-150 hover:text-fg" href="#faq">FAQ</a></div>
+  <a class="btn-idle btn-sm max-[560px]:hidden" href="https://github.com/Juan17la/Udeos_Launcher" rel="noopener"><svg class="size-[18px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>Source</a>
+  <button class="btn-idle btn-sq [&_svg]:block [&_svg]:size-[18px]" id="theme" aria-label="Toggle theme"></button>
+  <a class="btn-primary btn-sm" data-primary><span data-primary-label>Download</span></a>
 </nav>
+</header>
 
-<!-- 1. Hero: the only thing on screen until the visitor scrolls -->
-<section class="hero" id="top">
-  <div class="copy">
-    <div class="title"><img class="logo" src="assets/icon.png" alt=""><h1>Udeos Launcher</h1></div>
-    <p class="sub muted">Play Minecraft on Windows, macOS and Linux. No Microsoft account. Pick a name, pick a version, press Play.</p>
-    <ul class="checks">
-      <li><img src="assets/items/emerald.png" alt="">Free, no premium tier, no ads</li>
-      <li><img src="assets/items/diamond_pickaxe.png" alt="">Vanilla, Forge, NeoForge, Fabric and Quilt</li>
-      <li><img src="assets/items/golden_apple.png" alt="">Mods, skins and servers in one window</li>
-    </ul>
-    <div class="row">
-      <a class="btn primary lg" data-primary><span data-primary-label>Download</span></a>
-      <a class="btn secondary lg" href="#download">All platforms</a>
+<main>
+<!-- 1. The bill opens with the download -->
+<section class="relative z-1 mx-auto w-full max-w-[1240px] px-5 pt-12 pb-20 min-[900px]:pt-16" id="top">
+  <h1 class="headliner m-0 text-[clamp(40px,7.2vw,100px)]">Udeos Launcher <br><span class="text-muted">Minecraft, no account.</span></h1>
+  <p class="mt-6 mb-9 max-w-[480px] font-lead text-[19px] leading-[1.5] font-medium tracking-[-.01em] text-muted">Minecraft for Windows, macOS and Linux. No account needed. Free and open source.</p>
+  <div class="grid gap-px overflow-hidden rounded-lg bg-line shadow-edge min-[900px]:grid-cols-3">
+      <a class="group relative flex min-h-[120px] flex-col justify-between gap-6 bg-panel p-5 no-underline transition-colors duration-150 hover:bg-panel-2 max-[899px]:min-h-[104px] max-[899px]:gap-4 max-[899px]:[&.rec]:order-first [&.rec]:bg-primary [&.rec]:text-on-primary [&.rec]:hover:bg-primary-hover" data-dl="windows" data-os="windows">
+        <span class="flex items-center justify-between gap-3 font-mono text-xs tracking-wide text-muted uppercase group-[.rec]:text-on-primary"><span>Windows 10 / 11 · 64-bit</span><span class="hidden rounded-full bg-on-primary/20 px-2.5 py-0.5 font-semibold group-[.rec]:inline">Your system</span></span>
+        <span class="block"><b class="block text-[clamp(30px,3.4vw,46px)] leading-[.95] font-extrabold tracking-[-.04em]">Windows</b>
+          <span class="mt-4 flex items-center justify-between gap-3 font-mono text-[13px] text-muted group-[.rec]:text-on-primary"><span>Installer .exe<span data-size="windows"></span></span><svg class="size-6 shrink-0 transition-transform duration-200 ease-out-expo group-hover:translate-x-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+      </a>
+      <a class="group relative flex min-h-[120px] flex-col justify-between gap-6 bg-panel p-5 no-underline transition-colors duration-150 hover:bg-panel-2 max-[899px]:min-h-[104px] max-[899px]:gap-4 max-[899px]:[&.rec]:order-first [&.rec]:bg-primary [&.rec]:text-on-primary [&.rec]:hover:bg-primary-hover" data-dl="macos" data-os="macos">
+        <span class="flex items-center justify-between gap-3 font-mono text-xs tracking-wide text-muted uppercase group-[.rec]:text-on-primary"><span>Intel + Apple Silicon</span><span class="hidden rounded-full bg-on-primary/20 px-2.5 py-0.5 font-semibold group-[.rec]:inline">Your system</span></span>
+        <span class="block"><b class="block text-[clamp(30px,3.4vw,46px)] leading-[.95] font-extrabold tracking-[-.04em]">macOS</b>
+          <span class="mt-4 flex items-center justify-between gap-3 font-mono text-[13px] text-muted group-[.rec]:text-on-primary"><span>Universal .dmg<span data-size="macos"></span></span><svg class="size-6 shrink-0 transition-transform duration-200 ease-out-expo group-hover:translate-x-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+      </a>
+      <a class="group relative flex min-h-[120px] flex-col justify-between gap-6 bg-panel p-5 no-underline transition-colors duration-150 hover:bg-panel-2 max-[899px]:min-h-[104px] max-[899px]:gap-4 max-[899px]:[&.rec]:order-first [&.rec]:bg-primary [&.rec]:text-on-primary [&.rec]:hover:bg-primary-hover" data-dl="deb" data-os="linux">
+        <span class="flex items-center justify-between gap-3 font-mono text-xs tracking-wide text-muted uppercase group-[.rec]:text-on-primary"><span>x86_64 · no Java needed</span><span class="hidden rounded-full bg-on-primary/20 px-2.5 py-0.5 font-semibold group-[.rec]:inline">Your system</span></span>
+        <span class="block"><b class="block text-[clamp(30px,3.4vw,46px)] leading-[.95] font-extrabold tracking-[-.04em]">Linux</b>
+          <span class="mt-4 flex items-center justify-between gap-3 font-mono text-[13px] text-muted group-[.rec]:text-on-primary"><span>.deb package<span data-size="deb"></span></span><svg class="size-6 shrink-0 transition-transform duration-200 ease-out-expo group-hover:translate-x-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+      </a>
+  </div>
+  <p class="mt-5 mb-0 flex flex-wrap items-center gap-x-4 gap-y-1 font-mono text-[13px] text-muted"><span data-version>latest</span><span>MIT license</span><span>no telemetry</span><a class="text-fg underline decoration-primary decoration-2 underline-offset-4" href="#download">Portable .zip, .rpm, .tar.gz and install steps</a></p>
+</section>
+
+<!-- 2. Screens -->
+<section class="relative z-1 mx-auto w-full max-w-[1240px] px-5 py-24 pt-4" id="gallery">
+  <div class="reveal mb-10 border-t border-line pt-6"><h2 class="m-0 text-[clamp(30px,4.4vw,52px)]">The whole launcher, one window</h2></div>
+  <div class="reveal">
+    <div class="mb-6 flex w-fit max-w-full gap-1 overflow-x-auto rounded-md bg-panel p-1 shadow-edge" role="tablist" aria-label="Launcher pages">
+      <button class="btn rounded-md px-4 py-2 text-muted hover:text-fg aria-selected:bg-primary aria-selected:text-on-primary" role="tab" data-shot-tab="instances" aria-selected="true">Instances</button>
+      <button class="btn rounded-md px-4 py-2 text-muted hover:text-fg aria-selected:bg-primary aria-selected:text-on-primary" role="tab" data-shot-tab="addons" aria-selected="false">Addons</button>
+      <button class="btn rounded-md px-4 py-2 text-muted hover:text-fg aria-selected:bg-primary aria-selected:text-on-primary" role="tab" data-shot-tab="skins" aria-selected="false">Skins</button>
+      <button class="btn rounded-md px-4 py-2 text-muted hover:text-fg aria-selected:bg-primary aria-selected:text-on-primary" role="tab" data-shot-tab="servers" aria-selected="false">Servers</button>
     </div>
-    <div class="tags"><span class="tag v" data-version>latest</span><span class="tag">Windows</span><span class="tag">macOS</span><span class="tag">Linux</span><span class="tag l">No Java needed</span></div>
-  </div>
-  <div class="shots" aria-label="Launcher screenshots">
-    <img class="back1" data-shot="addons" width="1920" height="1334" alt="Addons page">
-    <img class="back2" data-shot="skins" width="1920" height="1334" alt="Skins page">
-    <img class="front" data-shot="instances" width="1920" height="1334" alt="Instances page of Udeos Launcher">
-  </div>
-  <a class="scroll-hint" href="#gallery">↓ see what's inside</a>
-</section>
-
-<!-- 2. Manifesto + gallery -->
-<section class="manifesto" id="gallery">
-  <span class="tag v eyebrow reveal">Why Udeos</span>
-  <h2 class="reveal">No premium. No paywall.<br><span>Everything in one launcher.</span></h2>
-  <p class="reveal" style="--delay:60ms">Instances, mod loaders, Modrinth, skins and your own servers. Every feature is free for everyone, and it all lives in one app.</p>
-</section>
-<section class="carousel" aria-label="Gallery">
-  <!-- Add photos here: one <figure class="panel"> per picture. data-shot swaps light/dark launcher screenshots;
-       for any other picture use a plain src instead. -->
-  <div class="track" id="track">
-    <figure class="panel"><img data-shot="instances" width="1920" height="1334" loading="lazy" alt="Instances page"><figcaption><b>Instances</b><span class="muted">Every version and modpack in its own space.</span></figcaption></figure>
-    <figure class="panel"><img data-shot="addons" width="1920" height="1334" loading="lazy" alt="Addons page"><figcaption><b>Addons</b><span class="muted">Mods, resource packs, shaders and modpacks from Modrinth.</span></figcaption></figure>
-    <figure class="panel"><img data-shot="skins" width="1920" height="1334" loading="lazy" alt="Skins page"><figcaption><b>Skins</b><span class="muted">Your library, a 3D preview and an editor.</span></figcaption></figure>
-    <figure class="panel"><img data-shot="servers" width="1920" height="1334" loading="lazy" alt="Servers page"><figcaption><b>Servers</b><span class="muted">Host a world and let your friends in.</span></figcaption></figure>
-  </div>
-  <div class="ctrl">
-    <button class="btn idle square" data-slide="-1" aria-label="Previous picture">←</button>
-    <button class="btn idle square" data-slide="1" aria-label="Next picture">→</button>
-  </div>
-</section>
-
-<!-- 3. Features -->
-<section id="features">
-  <div class="head reveal"><span class="tag l eyebrow">Features</span><h2>Everything in one place</h2><p>What you get the moment you open it. No extra installers, no accounts, no subscriptions.</p></div>
-  <div class="grid">
-    <div class="group">Play</div>
-    <div class="panel hover feat reveal"><div class="ico"><img src="assets/items/emerald.png" alt=""></div><h3>No account</h3><p>Pick a nickname and play.</p></div>
-    <div class="panel hover feat reveal" style="--delay:40ms"><div class="ico"><img src="assets/items/grass_block_side.png" alt=""></div><h3>Instances</h3><p>Own worlds, mods and settings.</p></div>
-    <div class="panel hover feat reveal" style="--delay:80ms"><div class="ico"><img src="assets/items/netherite_ingot.png" alt=""></div><h3>Java included</h3><p>Downloaded on first play.</p></div>
-    <div class="group">Mods</div>
-    <div class="panel hover feat reveal"><div class="ico"><img src="assets/items/iron_sword.png" alt=""></div><h3>Mod loaders</h3><p>Forge, NeoForge, Fabric, Quilt.</p></div>
-    <div class="panel hover feat reveal" style="--delay:40ms"><div class="ico"><img src="assets/items/diamond.png" alt=""></div><h3>Modrinth built in</h3><p>Modpacks in two clicks.</p></div>
-    <div class="panel hover feat reveal" style="--delay:80ms"><div class="ico"><img src="assets/items/nether_star.png" alt=""></div><h3>Ask AI</h3><p>Find mods that fit your idea.</p></div>
-    <div class="group">Yours</div>
-    <div class="panel hover feat reveal"><div class="ico"><img src="assets/items/apple.png" alt=""></div><h3>Skins</h3><p>Drop one in or paint it in 3D.</p></div>
-    <div class="panel hover feat reveal" style="--delay:40ms"><div class="ico"><img src="assets/items/golden_apple.png" alt=""></div><h3>Servers</h3><p>Host friends, zero setup.</p></div>
-    <div class="panel hover feat reveal" style="--delay:80ms"><div class="ico"><img src="assets/items/obsidian.png" alt=""></div><h3>Worlds</h3><p>Import, back up and browse.</p></div>
-  </div>
-</section>
-
-<!-- 4. Download + install per system -->
-<section id="download">
-  <div class="head reveal"><span class="tag v eyebrow">Install</span><h2>Up and running in a minute</h2><p>Pick your system. Your own one is selected already.</p></div>
-  <div class="panel install">
-    <div class="col">
-      <div class="tabs" role="tablist">
-        <button class="btn idle" role="tab" data-tab="windows" data-os="windows">Windows</button>
-        <button class="btn idle" role="tab" data-tab="macos" data-os="macos">macOS</button>
-        <button class="btn idle" role="tab" data-tab="linux" data-os="linux">Linux</button>
-      </div>
-      <div class="side" data-panel="windows">
-      <div class="top"><b>Windows</b><span class="tag">Windows 10 / 11 · 64-bit</span><span class="tag l">No Java needed</span></div>
-      <div class="files">
-        <div class="file"><div><b>Installer .exe</b><small>Recommended, with uninstaller<span data-size="windows"></span></small></div><a class="btn primary sm" data-dl="windows">Download</a></div>
-        <div class="file"><div><b>Portable .zip</b><small>Unzip anywhere, even a USB stick<span data-size="windows-portable"></span></small></div><a class="btn idle sm" data-dl="windows-portable">Download</a></div>
-      </div>
-      </div>
-      <div class="side" data-panel="macos" hidden>
-      <div class="top"><b>macOS</b><span class="tag">Intel + Apple Silicon</span><span class="tag l">No Java needed</span></div>
-      <div class="files">
-        <div class="file"><div><b>Universal .dmg</b><small>One file for every Mac<span data-size="macos"></span></small></div><a class="btn primary sm" data-dl="macos">Download</a></div>
-      </div>
-      </div>
-      <div class="side" data-panel="linux" hidden>
-      <div class="top"><b>Linux</b><span class="tag">x86_64</span><span class="tag l">No Java needed</span></div>
-      <div class="files">
-        <div class="file"><div><b>.deb</b><small>Debian, Ubuntu, Mint<span data-size="deb"></span></small></div><a class="btn primary sm" data-dl="deb">Download</a></div>
-        <div class="file"><div><b>.rpm</b><small>Fedora<span data-size="rpm"></span></small></div><a class="btn secondary sm" data-dl="rpm">Download</a></div>
-        <div class="file"><div><b>.tar.gz</b><small>Any distro, needs WebKitGTK<span data-size="linux"></span></small></div><a class="btn idle sm" data-dl="linux">Download</a></div>
-      </div>
-      </div>
+    <div class="grid w-full">
+      <figure class="m-0 col-start-1 row-start-1 transition-opacity duration-500 " data-pane="instances" >
+        <img class="block h-auto w-full rounded-lg shadow-pop" src="assets/light_instances.png" data-shot="instances" width="1920" height="1335" fetchpriority="low" alt="Instances page of Udeos Launcher: every Minecraft version and modpack in its own space">
+        <figcaption class="mt-4 text-muted">Every version and modpack in its own space.</figcaption></figure>
+      <figure class="m-0 col-start-1 row-start-1 transition-opacity duration-500 pointer-events-none opacity-0" data-pane="addons" aria-hidden="true">
+        <img class="block h-auto w-full rounded-lg shadow-pop" src="assets/light_addons.png" data-shot="addons" width="1920" height="1335" loading="lazy" alt="Addons page: mods, resource packs, shaders and modpacks from Modrinth">
+        <figcaption class="mt-4 text-muted">Mods, resource packs, shaders and modpacks from Modrinth.</figcaption></figure>
+      <figure class="m-0 col-start-1 row-start-1 transition-opacity duration-500 pointer-events-none opacity-0" data-pane="skins" aria-hidden="true">
+        <img class="block h-auto w-full rounded-lg shadow-pop" src="assets/light_skins.png" data-shot="skins" width="1920" height="1335" loading="lazy" alt="Skins page: your library, a 3D preview and an editor">
+        <figcaption class="mt-4 text-muted">Your library, a 3D preview and an editor.</figcaption></figure>
+      <figure class="m-0 col-start-1 row-start-1 transition-opacity duration-500 pointer-events-none opacity-0" data-pane="servers" aria-hidden="true">
+        <img class="block h-auto w-full rounded-lg shadow-pop" src="assets/light_servers.png" data-shot="servers" width="1920" height="1335" loading="lazy" alt="Servers page: host a Minecraft world and let your friends in">
+        <figcaption class="mt-4 text-muted">Host a world and let your friends in.</figcaption></figure>
     </div>
-    <div class="col">
-      <div class="side" data-panel="windows">
-        <h3>How to install</h3>
-      <ol class="steps">
-        <li><b>Run it</b>Open the <code>.exe</code>, or extract the zip.</li>
-        <li><b>SmartScreen</b>Click More info, then Run anyway.</li>
-        <li><b>Nickname</b>No email, no password.</li>
-        <li><b>Play</b>Create an instance and press Play.</li>
-      </ol>
-      <p class="note">Builds aren't code-signed yet, so Windows asks once.</p>
-      </div>
-      <div class="side" data-panel="macos" hidden>
-        <h3>How to install</h3>
-      <ol class="steps">
-        <li><b>Drag it</b>Open the <code>.dmg</code>, drag the app into Applications.</li>
-        <li><b>Right-click, Open</b>Only the first time, then Open again.</li>
-        <li><b>Nickname</b>No email, no password.</li>
-        <li><b>Play</b>Create an instance and press Play.</li>
-      </ol>
-      <p class="note">Still blocked? System Settings › Privacy &amp; Security › Open Anyway.</p>
-      </div>
-      <div class="side" data-panel="linux" hidden>
-        <h3>How to install</h3>
-      <ol class="steps">
-        <li><b>Debian / Ubuntu</b><code>sudo apt install ./<span data-file="deb">udeos-launcher-*.deb</span></code></li>
-        <li><b>Fedora</b><code>sudo dnf install ./<span data-file="rpm">udeos-launcher-*.rpm</span></code></li>
-        <li><b>Other</b><span><code>tar -xzf <span data-file="linux">udeos-launcher-*.tar.gz</span></code>, then run it.</span></li>
-        <li><b>Play</b>Open it from your app menu.</li>
-      </ol>
+  </div>
+</section>
+
+<!-- 3. Features as a bill: rank by size alone -->
+<section class="relative z-1 mx-auto w-full max-w-[1240px] px-5 py-24" id="features">
+  <div class="reveal mb-14 grid gap-4 border-t border-line pt-6 min-[900px]:grid-cols-[1fr_380px] min-[900px]:items-end"><h2 class="m-0 text-[clamp(30px,4.4vw,52px)]">What is inside, ranked</h2><p class="m-0 text-muted">Everything you get the moment you open it. No extra installers, no accounts, no subscriptions.</p></div>
+  <div class="mb-12">
+    <div class="reveal grid items-end gap-4 border-t border-line py-7 min-[900px]:grid-cols-[1fr_320px] min-[900px]:gap-10"><h3 class="headliner-sm m-0">Instances</h3><p class="m-0 flex gap-3 text-muted"><img class="mt-1 size-5 shrink-0 pixelated" src="assets/items/grass_block_side.png" width="20" height="20" alt=""><span>Every version and modpack in its own space, with its own worlds, mods and settings.</span></p></div>
+    <div class="reveal grid items-end gap-4 border-t border-line py-7 min-[900px]:grid-cols-[1fr_320px] min-[900px]:gap-10"><h3 class="headliner-sm m-0">Mod loaders</h3><p class="m-0 flex gap-3 text-muted"><img class="mt-1 size-5 shrink-0 pixelated" src="assets/items/iron_sword.png" width="20" height="20" alt=""><span>Forge, NeoForge, Fabric and Quilt, next to Vanilla.</span></p></div>
+    <div class="reveal grid items-end gap-4 border-t border-line py-7 min-[900px]:grid-cols-[1fr_320px] min-[900px]:gap-10"><h3 class="headliner-sm m-0">Modrinth</h3><p class="m-0 flex gap-3 text-muted"><img class="mt-1 size-5 shrink-0 pixelated" src="assets/items/diamond.png" width="20" height="20" alt=""><span>Built in. Mods, resource packs, shaders and modpacks in two clicks.</span></p></div>
+  </div>
+  <div class="mb-14 grid gap-x-8 gap-y-10 border-t border-line pt-8 min-[600px]:grid-cols-2 min-[1000px]:grid-cols-4">
+<div class="reveal"><h3 class="support m-0 mb-3">Skins</h3><p class="m-0 text-sm text-muted">Drop one in or paint it in 3D.</p></div>
+<div class="reveal"><h3 class="support m-0 mb-3">Servers</h3><p class="m-0 text-sm text-muted">Host friends with zero setup.</p></div>
+<div class="reveal"><h3 class="support m-0 mb-3">Worlds</h3><p class="m-0 text-sm text-muted">Import, back up and browse.</p></div>
+<div class="reveal"><h3 class="support m-0 mb-3">Ask AI</h3><p class="m-0 text-sm text-muted">Find mods that fit your idea.</p></div>
+  </div>
+  <p class="reveal m-0 max-w-[900px] border-t border-line pt-6 text-justify text-sm leading-relaxed text-muted [&_b]:text-fg"><b>No account.</b> Pick a nickname and play. <b>Java included.</b> Downloaded on first play. <b>Nicknames.</b> Keep several, each with its own theme, language and skins. <b>Themes.</b> Light or dark. <b>Languages.</b> English or Spanish. <b>Per instance.</b> Name, icon, memory, Java path and extra JVM arguments. <b>Servers.</b> Vanilla, with mods or from a modpack, with backups and whitelist. <b>Addons.</b> Drop a .jar or pack in by hand and it works too.</p>
+</section>
+
+<!-- 4. Open source: the drenched band -->
+<section class="relative z-1 bg-primary py-24 text-on-primary" id="open-source">
+  <div class="mx-auto w-full max-w-[1240px] px-5">
+    <h2 class="headliner reveal m-0">Open source.</h2>
+    <p class="support reveal mt-6 mb-12 max-w-[900px] text-on-primary">MIT license. No ads. No telemetry. Go and TypeScript.</p>
+    <div class="grid gap-10 min-[900px]:grid-cols-[1fr_auto] min-[900px]:items-end">
+      <p class="reveal m-0 max-w-[560px] text-justify text-base text-on-primary">The whole launcher is public. Read it, audit it, fork it, or fix the thing that bugs you and send it back. Issues and pull requests are welcome.</p>
+      <div class="flex flex-wrap gap-3">
+        <a class="btn lg btn-lg bg-white text-primary hover:bg-white" href="https://github.com/Juan17la/Udeos_Launcher" rel="noopener"><svg class="size-[18px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>View the source</a>
+        <a class="btn lg btn-lg text-on-primary hover:bg-on-primary/10" style="box-shadow:inset 0 0 0 1.5px rgb(255 255 255/.6)" href="https://github.com/Juan17la/Udeos_Launcher/issues" rel="noopener">Report a bug</a>
+        <a class="btn lg btn-lg text-on-primary hover:bg-on-primary/10" style="box-shadow:inset 0 0 0 1.5px rgb(255 255 255/.6)" href="https://github.com/Juan17la/Udeos_Launcher/blob/main/LICENSE" rel="noopener">Read the license</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 5. FAQ -->
-<section id="faq">
-  <div class="head reveal"><span class="tag eyebrow">FAQ</span><h2>Questions you might have</h2><p>Click a question to open it.</p></div>
-  <div class="faq">
-    <details class="panel reveal" name="faq" open>
-      <summary><img src="assets/items/grass_block_side.png" alt="">What's an instance?</summary>
-      <div class="ans"><p>An instance is a separate copy of the game: one Minecraft version, one loader (or Vanilla) and its own folder with <b>worlds, mods, resource packs, shaders, screenshots and settings</b>. Your 1.21 survival world and your 1.20.1 modpack never touch each other.</p>
-      <p>Game files like libraries, assets and Java are shared, so a second instance of the same version downloads almost nothing. Each instance can also have its own memory, Java path and JVM arguments.</p></div>
+<!-- 6. FAQ -->
+<section class="relative z-1 mx-auto w-full max-w-[1240px] px-5 py-24" id="faq">
+  <div class="reveal mb-14 grid gap-4 border-t border-line pt-6 min-[900px]:grid-cols-[1fr_380px] min-[900px]:items-end"><h2 class="m-0 text-[clamp(30px,4.4vw,52px)]">Questions you might have</h2><p class="m-0 text-muted">Click a question to open it.</p></div>
+  <div class="max-w-[900px]">
+    <details class="group reveal border-t border-line last:border-b" name="faq" open>
+      <summary class="flex cursor-pointer list-none items-center gap-3.5 py-5 text-lg font-bold tracking-[-.015em] after:ml-auto after:text-2xl after:leading-none after:text-primary after:transition-transform after:duration-200 after:ease-out-expo after:content-['+'] group-open:after:rotate-45 [&::-webkit-details-marker]:hidden"><img class="size-6 pixelated" src="assets/items/grass_block_side.png" width="24" height="24" alt="">What's an instance?</summary>
+      <div class="pb-6 text-sm text-muted min-[600px]:pl-[38px] [&_b]:text-fg [&_li]:mb-1.5 [&_ul]:mb-3 [&_ul]:list-disc [&_ul]:pl-[18px] max-w-[760px]"><p>An instance is a separate copy of the game: one Minecraft version, one loader (or Vanilla) and its own folder with <b>worlds, mods, resource packs, shaders, screenshots and settings</b>. Your 1.21 survival world and your 1.20.1 modpack never touch each other.</p><p>Game files like libraries, assets and Java are shared, so a second instance of the same version downloads almost nothing. Each instance can also have its own memory, Java path and JVM arguments.</p></div>
     </details>
-    <details class="panel reveal" name="faq">
-      <summary><img src="assets/items/diamond.png" alt="">How do addons work?</summary>
-      <div class="ans"><p>The <b>Addons</b> page searches Modrinth for mods, resource packs, shaders, data packs and modpacks.</p>
-      <ul><li><b>Add</b> shows only the instances the addon fits (right version and loader). Pick one and it installs, required dependencies included.</li>
-      <li>From an instance's own Mods tab, <b>Add from Modrinth</b> installs straight into that instance.</li>
-      <li>A <b>modpack</b> can become a brand new instance in one click.</li>
-      <li>Files you add by hand (drop a <code>.jar</code> or pack) work too.</li></ul></div>
+    <details class="group reveal border-t border-line last:border-b" name="faq">
+      <summary class="flex cursor-pointer list-none items-center gap-3.5 py-5 text-lg font-bold tracking-[-.015em] after:ml-auto after:text-2xl after:leading-none after:text-primary after:transition-transform after:duration-200 after:ease-out-expo after:content-['+'] group-open:after:rotate-45 [&::-webkit-details-marker]:hidden"><img class="size-6 pixelated" src="assets/items/diamond.png" width="24" height="24" alt="">How do addons work?</summary>
+      <div class="pb-6 text-sm text-muted min-[600px]:pl-[38px] [&_b]:text-fg [&_li]:mb-1.5 [&_ul]:mb-3 [&_ul]:list-disc [&_ul]:pl-[18px] max-w-[760px]"><p>The <b>Addons</b> page searches Modrinth for mods, resource packs, shaders, data packs and modpacks.</p><ul><li><b>Add</b> shows only the instances the addon fits (right version and loader). Pick one and it installs, required dependencies included.</li><li>From an instance's own Mods tab, <b>Add from Modrinth</b> installs straight into that instance.</li><li>A <b>modpack</b> can become a brand new instance in one click.</li><li>Files you add by hand (drop a <code>.jar</code> or pack) work too.</li></ul></div>
     </details>
-    <details class="panel reveal" name="faq">
-      <summary><img src="assets/items/golden_apple.png" alt="">How do I run a server, and what are the options?</summary>
-      <div class="ans"><p>Go to <b>Servers</b>, then create one: <b>Vanilla</b>, <b>With mods</b> (Fabric, Forge or NeoForge) or <b>From a modpack</b>. Press Start and the launcher downloads and sets up everything.</p>
-      <ul><li><b>Who can join:</b> Udeos players (default, skins work), Anyone, or Microsoft accounts.</li>
-      <li><b>Internet:</b> Relay mode (default) works without touching your router. Router mode opens the port with UPnP. Friends on the same Wi-Fi use your LAN address.</li>
-      <li><b>Tabs:</b> Console, Players (whitelist, ops, bans), Backups, Mods, Datapacks and Settings (<code>server.properties</code>, memory).</li></ul>
-      <p>Creating a server means accepting Mojang's EULA. Quilt servers aren't supported yet; most Quilt mods run on a Fabric server.</p></div>
+    <details class="group reveal border-t border-line last:border-b" name="faq">
+      <summary class="flex cursor-pointer list-none items-center gap-3.5 py-5 text-lg font-bold tracking-[-.015em] after:ml-auto after:text-2xl after:leading-none after:text-primary after:transition-transform after:duration-200 after:ease-out-expo after:content-['+'] group-open:after:rotate-45 [&::-webkit-details-marker]:hidden"><img class="size-6 pixelated" src="assets/items/golden_apple.png" width="24" height="24" alt="">How do I run a server, and what are the options?</summary>
+      <div class="pb-6 text-sm text-muted min-[600px]:pl-[38px] [&_b]:text-fg [&_li]:mb-1.5 [&_ul]:mb-3 [&_ul]:list-disc [&_ul]:pl-[18px] max-w-[760px]"><p>Go to <b>Servers</b>, then create one: <b>Vanilla</b>, <b>With mods</b> (Fabric, Forge or NeoForge) or <b>From a modpack</b>. Press Start and the launcher downloads and sets up everything.</p><ul><li><b>Who can join:</b> Udeos players (default, skins work), Anyone, or Microsoft accounts.</li><li><b>Internet:</b> Relay mode (default) works without touching your router. Router mode opens the port with UPnP. Friends on the same Wi-Fi use your LAN address.</li><li><b>Tabs:</b> Console, Players (whitelist, ops, bans), Backups, Mods, Datapacks and Settings (<code>server.properties</code>, memory).</li></ul><p>Creating a server means accepting Mojang's EULA. Quilt servers aren't supported yet; most Quilt mods run on a Fabric server.</p></div>
     </details>
-    <details class="panel reveal" name="faq">
-      <summary><img src="assets/items/apple.png" alt="">How do skins work?</summary>
-      <div class="ans"><p>On the <b>Skins</b> page, drop a <code>.png</code> you downloaded or click <b>New skin</b> to paint one on a 3D model. Pick <b>Classic</b> (Steve, 4px arms) or <b>Slim</b> (Alex, 3px arms); the launcher guesses the right one on import.</p>
-      <p>Click a skin in your library to wear it. It is used by every instance from the next Play, and it shows in singleplayer and on Udeos servers. Each nickname has its own skin library.</p></div>
+    <details class="group reveal border-t border-line last:border-b" name="faq">
+      <summary class="flex cursor-pointer list-none items-center gap-3.5 py-5 text-lg font-bold tracking-[-.015em] after:ml-auto after:text-2xl after:leading-none after:text-primary after:transition-transform after:duration-200 after:ease-out-expo after:content-['+'] group-open:after:rotate-45 [&::-webkit-details-marker]:hidden"><img class="size-6 pixelated" src="assets/items/apple.png" width="24" height="24" alt="">How do skins work?</summary>
+      <div class="pb-6 text-sm text-muted min-[600px]:pl-[38px] [&_b]:text-fg [&_li]:mb-1.5 [&_ul]:mb-3 [&_ul]:list-disc [&_ul]:pl-[18px] max-w-[760px]"><p>On the <b>Skins</b> page, drop a <code>.png</code> you downloaded or click <b>New skin</b> to paint one on a 3D model. Pick <b>Classic</b> (Steve, 4px arms) or <b>Slim</b> (Alex, 3px arms); the launcher guesses the right one on import.</p><p>Click a skin in your library to wear it. It is used by every instance from the next Play, and it shows in singleplayer and on Udeos servers. Each nickname has its own skin library.</p></div>
     </details>
-    <details class="panel reveal" name="faq">
-      <summary><img src="assets/items/end_crystal.png" alt="">Can I personalize the launcher?</summary>
-      <div class="ans"><ul><li><b>Theme:</b> light or dark.</li>
-      <li><b>Language:</b> English or Spanish.</li>
-      <li><b>Nicknames:</b> keep several. Each one remembers its own theme, language and skins.</li>
-      <li><b>Per instance:</b> name, icon, memory, Java path and extra JVM arguments.</li></ul></div>
+    <details class="group reveal border-t border-line last:border-b" name="faq">
+      <summary class="flex cursor-pointer list-none items-center gap-3.5 py-5 text-lg font-bold tracking-[-.015em] after:ml-auto after:text-2xl after:leading-none after:text-primary after:transition-transform after:duration-200 after:ease-out-expo after:content-['+'] group-open:after:rotate-45 [&::-webkit-details-marker]:hidden"><img class="size-6 pixelated" src="assets/items/end_crystal.png" width="24" height="24" alt="">Can I personalize the launcher?</summary>
+      <div class="pb-6 text-sm text-muted min-[600px]:pl-[38px] [&_b]:text-fg [&_li]:mb-1.5 [&_ul]:mb-3 [&_ul]:list-disc [&_ul]:pl-[18px] max-w-[760px]"><ul><li><b>Theme:</b> light or dark.</li><li><b>Language:</b> English or Spanish.</li><li><b>Nicknames:</b> keep several. Each one remembers its own theme, language and skins.</li><li><b>Per instance:</b> name, icon, memory, Java path and extra JVM arguments.</li></ul></div>
     </details>
-    <details class="panel reveal" name="faq">
-      <summary><img src="assets/items/obsidian.png" alt="">Where are my instance folders?</summary>
-      <div class="ans"><p>Everything lives in one folder. Each instance is in <code>instances/&lt;id&gt;/.minecraft</code> inside it:</p>
-      <div class="paths">
-        <div><span class="tag">Windows</span><code>%AppData%\UdeosLauncher\instances</code></div>
-        <div><span class="tag">macOS</span><code>~/Library/Application Support/UdeosLauncher/instances</code></div>
-        <div><span class="tag">Linux</span><code>~/.config/UdeosLauncher/instances</code></div>
-      </div>
-      <p>The easiest way is the <b>Open folder</b> button on an instance's page. Set the <code>UDEOS_HOME</code> environment variable to keep everything somewhere else.</p></div>
+    <details class="group reveal border-t border-line last:border-b" name="faq">
+      <summary class="flex cursor-pointer list-none items-center gap-3.5 py-5 text-lg font-bold tracking-[-.015em] after:ml-auto after:text-2xl after:leading-none after:text-primary after:transition-transform after:duration-200 after:ease-out-expo after:content-['+'] group-open:after:rotate-45 [&::-webkit-details-marker]:hidden"><img class="size-6 pixelated" src="assets/items/obsidian.png" width="24" height="24" alt="">Where are my instance folders?</summary>
+      <div class="pb-6 text-sm text-muted min-[600px]:pl-[38px] [&_b]:text-fg [&_li]:mb-1.5 [&_ul]:mb-3 [&_ul]:list-disc [&_ul]:pl-[18px] max-w-[760px]"><p>Everything lives in one folder. Each instance is in <code>instances/&lt;id&gt;/.minecraft</code> inside it:</p><div class="mt-2 mb-3 grid gap-2 [&>div]:grid [&>div]:items-center [&>div]:gap-1 min-[521px]:[&>div]:grid-cols-[80px_1fr] min-[521px]:[&>div]:gap-3 [&_.tag]:justify-self-start"><div><span class="tag">Windows</span><code>%AppData%\UdeosLauncher\instances</code></div><div><span class="tag">macOS</span><code>~/Library/Application Support/UdeosLauncher/instances</code></div><div><span class="tag">Linux</span><code>~/.config/UdeosLauncher/instances</code></div></div><p>The easiest way is the <b>Open folder</b> button on an instance's page. Set the <code>UDEOS_HOME</code> environment variable to keep everything somewhere else.</p></div>
     </details>
   </div>
 </section>
 
-<footer>
-  <div class="top">
-    <div><div class="brand"><img src="assets/icon.png" alt="">Udeos Launcher</div>
-      <a class="oss" href="https://github.com/Juan17la/Udeos_Launcher/blob/main/LICENSE">Open source</a></div>
-    <div class="cols">
+</main>
+
+<footer class="mx-auto w-full max-w-[1240px] px-5 relative z-1 grid gap-10 pt-12 pb-12 text-[13px] text-muted [&_a]:no-underline [&_a:hover]:text-fg [&_a:hover]:underline [&_a:hover]:decoration-primary [&_a:hover]:decoration-2 [&_a:hover]:underline-offset-[3px]">
+  <div class="grid gap-10 min-[900px]:grid-cols-[1.2fr_1fr_1fr]">
+    <div class="grid content-start gap-3">
+      <div class="flex items-center gap-3 font-display text-2xl text-fg"><img class="w-10" src="assets/icon.png" width="40" height="40" alt="">Udeos Launcher</div>
+      <p class="m-0 max-w-[340px] text-muted">Free Minecraft launcher for Windows, macOS and Linux. No Microsoft account, no premium tier, no ads, no telemetry.</p>
+      <a class="inline-block text-xs" href="https://github.com/Juan17la/Udeos_Launcher/blob/main/LICENSE">Open source · MIT</a>
+    </div>
+    <div class="grid content-start gap-2 [&_b]:text-fg">
+      <b>Downloads</b>
+      <a href="#top" data-dl="windows">Windows installer .exe<span data-size="windows"></span></a>
+      <a href="#top" data-dl="windows-portable">Windows portable .zip<span data-size="windows-portable"></span></a>
+      <a href="#top" data-dl="macos">macOS universal .dmg<span data-size="macos"></span></a>
+      <a href="#top" data-dl="deb">Linux .deb (Debian, Ubuntu, Mint)<span data-size="deb"></span></a>
+      <a href="#top" data-dl="rpm">Linux .rpm (Fedora)<span data-size="rpm"></span></a>
+      <a href="#top" data-dl="linux">Linux .tar.gz (any distro)<span data-size="linux"></span></a>
+    </div>
+    <div class="grid content-start gap-2 [&_b]:text-fg [&_code]:rounded-sm [&_code]:bg-panel-2 [&_code]:px-1.5 [&_code]:py-px [&_code]:font-mono [&_code]:text-[11px] [&_code]:text-fg">
+      <b>Install</b>
+      <p class="m-0">Builds aren't code-signed yet. <b>Windows:</b> SmartScreen, then More info, then Run anyway.</p>
+      <p class="m-0"><b>macOS:</b> right-click the app and choose Open, the first time only. Still blocked? System Settings › Privacy &amp; Security › Open Anyway.</p>
+      <p class="m-0"><b>Debian / Ubuntu:</b> <code>sudo apt install ./udeos-launcher-*.deb</code></p>
+      <p class="m-0"><b>Fedora:</b> <code>sudo dnf install ./udeos-launcher-*.rpm</code></p>
+      <p class="m-0"><b>Other Linux:</b> <code>tar -xzf udeos-launcher-*.tar.gz</code>, then run it. Needs WebKitGTK.</p>
+    </div>
+  </div>
+  <div class="flex flex-wrap justify-between gap-8">
+    <div class="flex flex-wrap gap-12 [&>div]:grid [&>div]:content-start [&>div]:gap-2 [&_b]:text-fg">
       <div><b>Project</b>
         <a href="https://github.com/Juan17la/Udeos_Launcher">Repository</a>
         <a href="https://github.com/Juan17la/Udeos_Launcher/releases">Releases</a>
         <a href="https://github.com/Juan17la/Udeos_Launcher/issues">Report a bug</a></div>
       <div><b>Author</b>
-        <a href="https://x.com/1714jud">Twitter / X · @1714jud</a>
-        <a href="https://github.com/Juan17la">GitHub · Juan17la</a></div>
+        <a href="https://x.com/1714jud" rel="me">Twitter / X · @1714jud</a>
+        <a href="https://github.com/Juan17la" rel="me">GitHub · Juan17la</a></div>
     </div>
   </div>
-  <p class="legal">© <span id="year">2026</span> Udeos Launcher. NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</p>
+  <p class="m-0 border-t border-line pt-5 text-[11px]/[1.6] tracking-[.03em]">© <span id="year">2026</span> Udeos Launcher. NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</p>
 </footer>
-<div class="grass" aria-hidden="true"></div>
+<div class="relative z-1 h-4 bg-[url(../assets/items/grass_block_side.png)] bg-size-[16px_16px] bg-repeat-x pixelated" aria-hidden="true"></div>
 
 <script src="js/download.js"></script>
 <script src="js/main.js"></script>

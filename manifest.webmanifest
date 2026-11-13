@@ -1,0 +1,11 @@
+{
+  "name": "Udeos Launcher",
+  "short_name": "Udeos",
+  "description": "A free Minecraft launcher for Windows, macOS and Linux that needs no Microsoft account.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#0E1423",
+  "theme_color": "#0E1423",
+  "icons": [{ "src": "assets/icon.png", "sizes": "256x256", "type": "image/png", "purpose": "any" }]
+}
