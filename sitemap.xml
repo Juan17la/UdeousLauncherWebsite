@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://juan17la.github.io/Udeos_Launcher/</loc>
+    <loc>https://udeouslauncherwebsite.pages.dev/</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://juan17la.github.io/Udeos_Launcher/"/>
-    <image:image><image:loc>https://juan17la.github.io/Udeos_Launcher/assets/light_instances.png</image:loc><image:title>Udeos Launcher instances page</image:title></image:image>
-    <image:image><image:loc>https://juan17la.github.io/Udeos_Launcher/assets/light_addons.png</image:loc><image:title>Udeos Launcher addons page</image:title></image:image>
-    <image:image><image:loc>https://juan17la.github.io/Udeos_Launcher/assets/light_skins.png</image:loc><image:title>Udeos Launcher skins page</image:title></image:image>
-    <image:image><image:loc>https://juan17la.github.io/Udeos_Launcher/assets/light_servers.png</image:loc><image:title>Udeos Launcher servers page</image:title></image:image>
+    <xhtml:link rel="alternate" hreflang="en" href="https://udeouslauncherwebsite.pages.dev/"/>
+    <image:image><image:loc>https://udeouslauncherwebsite.pages.dev/assets/light_instances.png</image:loc><image:title>Udeos Launcher instances page</image:title></image:image>
+    <image:image><image:loc>https://udeouslauncherwebsite.pages.dev/assets/light_addons.png</image:loc><image:title>Udeos Launcher addons page</image:title></image:image>
+    <image:image><image:loc>https://udeouslauncherwebsite.pages.dev/assets/light_skins.png</image:loc><image:title>Udeos Launcher skins page</image:title></image:image>
+    <image:image><image:loc>https://udeouslauncherwebsite.pages.dev/assets/light_servers.png</image:loc><image:title>Udeos Launcher servers page</image:title></image:image>
   </url>
 </urlset>
